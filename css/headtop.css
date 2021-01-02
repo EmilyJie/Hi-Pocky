@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+#main .sp{ display: none; }
+#main .intro{ width: 100%; height: 100vh;  min-height: 630px; max-height: 800px; padding-top: 55%; position: relative; }
+#main .intro .visual-wrap{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; }
+#main .intro .visual-list{ position: absolute; left: 50%; bottom: 0; z-index: 5; overflow: hidden; }
+#main .intro .visual-list .item{ float: left; transform: translateX(80px); }
+#main .intro .visual-list .item01{ margin-right: 20px; }
+#main .intro .visual-list .item02{ margin-right: 20px; }
+#main .intro .visual-list .item03{ margin-right: 20px; }
+#main .intro .visual-list .item04{ margin-right: 20px; }
+#main .intro .visual-list .item05{ margin-right: 20px; }
+#main .intro .visual-bg{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+#main .intro .visual-bg .active-bg,
+#main .intro .visual-bg .idle-bg{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+#main .intro .visual-bg .active-bg{ transform: scale(0); z-index: 1; }
+#main .intro .visual-bg .active-bg.bg01,
+#main .intro .visual-bg .idle-bg.bg01{ background-color: #F49687; }
+#main .intro .visual-bg .active-bg.bg02,
+#main .intro .visual-bg .idle-bg.bg02{ background-color: #FFB2DB; }
+#main .intro .visual-bg .active-bg.bg03,
+#main .intro .visual-bg .idle-bg.bg03{ background-color: #3DA44C; }
+#main .intro .visual-bg .active-bg.bg04,
+#main .intro .visual-bg .idle-bg.bg04{ background-color: #8EEBFF; }
+#main .intro .visual-bg .active-bg.bg05,
+#main .intro .visual-bg .idle-bg.bg05{ background-color: #FFDB7E; }
+
+
+@media screen and (max-width: 860px) {
+	#main .intro{ height: 0; padding-top: 110%;  min-height: inherit;}
+	#main .intro .visual-list{ height: 60%;}
+	#main .intro .visual-list .item{ float: left; height: auto; /*height: 120%;*/ transform: translateX(5vw); }
+	#main .intro .visual-list .item01{ margin-right: 0; width: 100px; }
+	#main .intro .visual-list .item02{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item03{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item04{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item05{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item img{ height: auto; width: 100%; }
+}
+
+/*animation*/
+#main .intro .visual-bg .active-bg.show01{ animation: visualBgSlide01 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: left center; }
+#main .intro .visual-bg .active-bg.show02{ animation: visualBgSlide02 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: center top; }
+#main .intro .visual-bg .active-bg.show03{ animation: visualBgSlide03 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: right center; }
+#main .intro .visual-bg .active-bg.show04{ animation: visualBgSlide04 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: center bottom; }
+#main .intro::before{ content: ''; width: 100%; height: 100%; position: absolute; right: 0; top: 0; background-color: #ffffff; z-index: 50; }
+#main .intro.show::before{ width: 0; transition: width 0.5s cubic-bezier(1.000, 0.000, 0.000, 1.000); }
+#main .intro .visual-list .item img{ transform: translateY(100%); }
+#main .intro .visual-list .item.show img{ transform: translateY(0); transition: transform 0.5s ease; }
+
+
+
+/*keyframe*/
+@keyframes visualBgSlide01{
+	0%{ transform: scaleX(0); }
+	100%{ transform: scaleX(1); }
+}
+@keyframes visualBgSlide02{
+	0%{ transform: scaleY(0); }
+	100%{ transform: scaleY(1); }
+}
+@keyframes visualBgSlide03{
+	0%{ transform: scaleX(0); }
+	100%{ transform: scaleX(1); }
+}
+@keyframes visualBgSlide04{
+	0%{ transform: scaleY(0); }
+	100%{ transform: scaleY(1); }
+}
