@@ -147,7 +147,7 @@ footer .container p{color:#858585; text-align: center; margin-top: 20px;}
 
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:480px){
     /*header*/
     .logo{ height: 3.2rem;}
     .headertext{ margin-top: 30px; height: 18rem; right: 12%;}
@@ -171,7 +171,6 @@ footer .container p{color:#858585; text-align: center; margin-top: 20px;}
     .flavor_text h2{ font-size: 1.4rem!important;}
     .flavor_text p{ width: 112px; -webkit-transform: scale(0.6); margin-left: -22px;}
     .flavorbox{ width: 60px!important; height: 85px!important; margin-top: 10px!important;}
-    .flavor_text{ margin-top: 10px; margin-bottom: 10px;}
 
     .chocolate img{ width: 180px; height: 90px; margin-top: 10px;}
     .chocolate .flavor_text{ margin-left: 30px;}
