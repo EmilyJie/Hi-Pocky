@@ -147,6 +147,52 @@ footer .container p{color:#858585; text-align: center; margin-top: 20px;}
 
 }
 
+@media screen and (max-width:425px){
+    /*header*/
+    .logo{ height: 3.2rem;}
+    .headertext{ margin-top: 30px; height: 18rem; right: 12%;}
+
+    /*history*/
+    .history .content_title{ display: none;}
+    .content_title_mid{ margin-top: 8px; font-size: 4.8rem; line-height: 4.8rem;}
+    .bg_history1{ margin-top:-20px; width: 300px; height: 150px; margin-left: 0px;}
+    .img_pockybox{width: 320px; margin-top: 10px; margin-left: -330px;}
+    .content_text{ font-size: 1.4rem; width: 300px; margin-top: 160px; left: 180px;}
+    .bg_history2_box{ margin-top: 160px;}
+    h2{ font-size: 2.4rem !important;}
+    #main .point .buds.show img{ width:75px; height:500px;}
+    .history_title{ width: 200px; font-size: 1.8rem!important; line-height: 2.8rem; top: 910px; margin-left: 178px;}
+    .bg_history2_box p{ width: 200px; font-size: 1rem; top: 850px; margin-left: 0px;}
+
+    /*flavor*/
+    .flavor_title{ margin-top: 0px;}
+    .flavor_title .content_title{ font-size: 4.8rem!important; margin-left: 20px;}
+    .img_smallcontent{ height: 14px; margin-top: 30px; margin-left: 90px;}
+    .flavor_text h2{ font-size: 1.4rem!important;}
+    .flavor_text p{ width: 112px; -webkit-transform: scale(0.6); margin-left: -22px;}
+    .flavorbox{ width: 60px!important; height: 85px!important; margin-top: 10px!important;}
+    .flavor_text{ margin-top: 10px; margin-bottom: 10px;}
+
+    .chocolate img{ width: 180px; height: 90px; margin-top: 10px;}
+    .chocolate .flavor_text{ margin-left: 30px;}
+    .chocolate .flavorbox{ margin-left: 5.2%;}
+    .strawberry img{ width: 180px; height: 90px; margin-top: 10px;}
+    .strawberry .flavor_text{ margin-left: 30px;}
+    .strawberry .flavorbox{ margin-left: 5%;}
+    .matcha img{ width: 180px; height: 90px; margin-top: 10px;}
+    .matcha .flavor_text{ margin-left: 30px;}
+    .matcha .flavorbox{ margin-left: 5.8%;}
+    .potato img{ width: 180px; height: 90px; margin-top: 10px;}
+    .potato .flavor_text{ margin-left: 30px;}
+    .potato .flavorbox{ margin-left: 6%;}
+    .melon img{ width: 180px; height: 90px; margin-top: 10px;}
+    .melon .flavor_text{ margin-left: 30px;}
+    .melon .flavorbox{ margin-left: 6.5%;}
+
+    /*footer*/
+    footer  p{ -webkit-transform: scale(0.9);}
+}
+
 @media screen and (max-width:320px){
     /*header*/
     .logo{ height: 3.2rem;}
