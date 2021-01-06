@@ -13,6 +13,8 @@ header{
     display: flex;
     justify-content:space-between;
 }
+.home, .logo{ transition: all 0.5s;}
+.home:hover, .logo:hover { transform: scale(1.1);}
 
 header a:hover{
     text-decoration:none;
