@@ -1,28 +1,12 @@
-.logo a{ position: absolute; margin-top: 60px; right: 5.5%; z-index: 2; transition: all 0.5s;}
-.logo a:hover { transform: scale(1.1);}
-header{
-    margin: 0 100px;
-}
-.icon{
-    display: flex;
-    justify-content:space-between;
-}
+/*header*/
+header{ margin: 0 100px;}
+.icon{ display: flex; justify-content:space-between;}
+.home, .logo{ transition: all 0.5s;}
+.home:hover, .logo:hover{ transform: scale(1.1);}
+.slide a{ text-decoration: none!important;}
 
-.icon a:hover{
-    text-decoration:none;
-    opacity: 0.8;
-}
-.container{
-    margin: 0 auto;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-h1{
-    font-size: 50px!important;
-    text-align: left;
-    margin-left:100px!important;
-}
-
+h1{ font-size: 50px!important; text-align: left; margin-left:100px!important;}
+/*page1*/
 .page1{
     display: flex;
     background-color: white;
@@ -37,6 +21,7 @@ h1{
 .page1 p{color:black; font-size:25px;}
 .page1_img{margin-top: 100px;margin-right:50px;}
 
+/*page2*/
 .page2{
     display: flex;
     background-color: white;
@@ -51,6 +36,7 @@ h1{
 .page2 p{color:black; font-size:25px;}
 .page2_img{margin-top: 100px;margin-right:50px;}
 
+/*page3*/
 .page3{
     display: flex;
     background-color: white;
@@ -65,6 +51,7 @@ h1{
 .page3 p{color:black; font-size:25px;}
 .page3_img{margin-top: 100px;margin-right:50px;}
 
+/*page4*/
 .page4{
     flex-direction: column;
     background-color: white;
@@ -79,6 +66,7 @@ h1{
 .page4 p{color:black; font-size:25px;margin:5px 0px!important;}
 .page4 img{padding-bottom: 20px;}
 
+/*page5*/
 .page5{
     flex-direction: column;
     background-color: white;
@@ -95,10 +83,7 @@ h1{
 .color_4{width:25px;height: 25px;background: #8EEBFF;margin-right: 10px;}
 .color_5{width:25px;height: 25px;background: #FFDB7E;}
 footer .container h3{font-weight: bold;text-align: center;margin-top: 15px;}
-.btn_footer{display: flex;justify-content: center;margin-top: 10
-    
-    
-    px;}
+.btn_footer{display: flex;justify-content: center;margin-top: 10px;}
 .btn_fb,.btn_ig,.btn_twitter{margin-right: 30px;}
 .btn_fb:hover,.btn_ig:hover,.btn_twitter:hover,.btn_yt:hover{opacity: 0.5;}
 footer .container p{color:#858585; text-align: center; margin-top: 20px;}

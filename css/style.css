@@ -64,9 +64,7 @@ h2{ font-size: 3.8rem !important;}
 }
 
 /*flavor*/
-.flavor a:hover{
-    text-decoration: none;
-}
+.flavor a:hover{ text-decoration: none;}
 .flavor_title{ display: flex; justify-content: space-between;}
 .flavor_title .content_title{ margin-left: 130px;}
 .img_smallcontent{ height: 35px; margin-top: 100px; margin-right: 100px;}
@@ -108,16 +106,45 @@ footer .container h3{font-weight: bold;text-align: center;margin-top: 15px;}
 footer .container p{color:#858585; text-align: center; margin-top: 20px;}
 
 @media screen and (max-width: 768px) {
-    .introduce{ margin-top: -10px!important;}
-    .content_title{ display: none;}
+    /*history*/
+    .history .content_title{ display: none;}
     .content_title_mid{ display: block; font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 10rem;
                         letter-spacing: 0.1rem; line-height: 10rem; text-align: left;}
     .history{ margin-top: -12px;}
-    .content_title{ font-size: 9.5rem;}
     .bg_history1_box{ margin-top: 50px; justify-content: flex-end;}
     .bg_history1{ width: 600px; height: 300px;}
     .img_pockybox{ width: 650px; margin-top: 55px; margin-left: -660px;}
-    .content_text{ font-size: 2rem; margin-top: 340px; margin-right: 70px;}
+    .content_text{ font-size: 2.2rem; width: 646px; margin-top: 340px; margin-right: 10px;}
+    .bg_history2_box{ margin-top: 170px;}
+    h2{ font-size: 3.2rem !important;}
+    #main .point .buds.show img{ width: 155px; height: 800px;}
+    .history_title{ width: 400px; font-size: 3.2rem!important; line-height: 4rem; top: 1610px; margin-left: 300px;}
+    .bg_history2_box p{ width: 380px; font-size: 2.2rem; top: 1430px; margin-left: 300px;}
+
+    /*flavor*/
+    .flavor_title .content_title{ font-size: 10rem!important; margin-left: 30px;}
+    .img_smallcontent{ height: 24px; margin-top: 68px; margin-left: 160px;}
+    .flavor_text h2{ font-size: 3.2rem!important;}
+    .flavor_text p{ -webkit-transform: scale(0.9); margin-left: -8px;}
+    .flavorbox{ width: 100px!important; height: 140px!important; margin-top: 10px!important;}
+    .flavor_text{ margin-top: 25px; margin-bottom: 10px;}
+
+    .chocolate img{ width: 300px; height: 140px; margin-top: 10px;}
+    .chocolate .flavor_text{ margin-left: 60px; margin-top: 45px;}
+    .chocolate .flavorbox{ margin-left: 7.9%;}
+    .strawberry img{ width: 300px; height: 140px; margin-top: 10px;}
+    .strawberry .flavor_text{ margin-left: 60px; margin-top: 45px;}
+    .strawberry .flavorbox{ margin-left: 5%;}
+    .matcha img{ width: 300px; height: 140px; margin-top: 10px;}
+    .matcha .flavor_text{ margin-left: 60px; margin-top: 45px;}
+    .matcha .flavorbox{ margin-left: 14.9%;}
+    .potato img{ width: 300px; height: 140px; margin-top: 10px;}
+    .potato .flavor_text{ margin-left: 60px; margin-top: 45px;}
+    .potato .flavorbox{ margin-left: 16.5%;}
+    .melon img{ width: 300px; height: 140px; margin-top: 10px;}
+    .melon .flavor_text{ margin-left: 60px; margin-top: 45px;}
+    .melon .flavorbox{ margin-left: 18.8%;}
+
 }
 
 @media screen and (max-width:320px){
@@ -126,39 +153,42 @@ footer .container p{color:#858585; text-align: center; margin-top: 20px;}
     .headertext{ margin-top: 30px; height: 18rem; right: 12%;}
 
     /*history*/
-    .content_title{ display: none;}
-    .content_title_mid{ margin-top: 8px; font-size: 6rem; line-height: 6rem;}
+    .history .content_title{ display: none;}
+    .content_title_mid{ margin-top: 8px; font-size: 4.8rem; line-height: 4.8rem;}
     .bg_history1{ margin-top:-20px; width: 250px; height: 150px; margin-left: 0px;}
     .img_pockybox{width: 290px; margin-top: 10px; margin-left: -290px;}
     .content_text{ font-size: 1.4rem; width: 260px; margin-top: 160px; left: 125px;}
     .bg_history2_box{ margin-top: 160px; max-width: 320px;}
     h2{ font-size: 2.4rem !important;}
-    #main .point .buds.show img{ margin-top:350px; width:70px; height:500px;}
-    .history_title{ width: 180px; font-size: 1.8rem!important; line-height: 2.8rem; top: 850px; margin-left: 130px;}
-    .bg_history2_box p{ width: 180px; font-size: 1rem; top: 790px; margin-left: 5px;}
+    #main .point .buds.show img{ width:75px; height:500px;}
+    .history_title{ width: 180px; font-size: 1.8rem!important; line-height: 2.8rem; top: 820px; margin-left: 130px;}
+    .bg_history2_box p{ width: 180px; font-size: 1rem; top: 760px; margin-left: 5px;}
 
     /*flavor*/
     .flavor_title{ margin-top: 0px;}
-    .flavor_title .content_title{ font-size: 2.4rem!important; margin-left: 500px;}
-    .img_smallcontent{ height: 18px; margin-top: 50px; margin-left: 190px; margin-bottom: 10px;}
+    .flavor_title .content_title{ font-size: 4.8rem!important; margin-left: 10px;}
+    .img_smallcontent{ height: 14px; margin-top: 30px; margin-left: 25px; margin-bottom: 8px;}
     .flavor_text h2{ font-size: 1.4rem!important;}
     .flavor_text p{ width: 112px; -webkit-transform: scale(0.5); margin-left: -27px;}
     .flavorbox{ width: 45px!important; height: 65px!important; margin-top: 10px!important;}
     .flavor_text{ margin-top: 25px; margin-bottom: 10px;}
 
-    .chocolate img{ width: 140px; height: 70px; margin-top: 5px;}
+    .chocolate img{ width: 140px; height: 70px; margin-top: 10px;}
     .chocolate .flavor_text{ margin-left: 20px;}
     .chocolate .flavorbox{ width: 145px; margin-left: 5.5%;}
-    .strawberry img{ width: 140px; height: 70px; margin-top: 5px;}
+    .strawberry img{ width: 140px; height: 70px; margin-top: 10px;}
     .strawberry .flavor_text{ margin-left: 20px;}
     .strawberry .flavorbox{ margin-left: 4%;}
-    .matcha img{ width: 140px; height: 70px; margin-top: 5px;}
+    .matcha img{ width: 140px; height: 70px; margin-top: 10px;}
     .matcha .flavor_text{ margin-left: 20px;}
     .matcha .flavorbox{ margin-left: 5.9%;}
-    .potato img{ width: 140px; height: 70px; margin-top: 5px;}
+    .potato img{ width: 140px; height: 70px; margin-top: 10px;}
     .potato .flavor_text{ margin-left: 20px;}
     .potato .flavorbox{ margin-left: 6%;}
-    .melon img{ width: 140px; height: 70px; margin-top: 5px;}
+    .melon img{ width: 140px; height: 70px; margin-top: 10px;}
     .melon .flavor_text{ margin-left: 20px;}
     .melon .flavorbox{ margin-left: 6.5%;}
+
+    /*footer*/
+    footer  p{ -webkit-transform: scale(0.9);}
 }
