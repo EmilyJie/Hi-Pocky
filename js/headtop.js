@@ -1,20 +1,21 @@
 $(function(){
 
 	var stageColorParam = {
-		"interval": 3500, 
+		"interval": 3500, //切替の間隔
 		"allow": 0
 	};
 	var waveInit = {
 		"intro": true,
 		"point": true,
+		"footer": true
 	};
 	var slideElParam = {
 		"intro":{
-			"speed": 150, 
-			"spSpeed": 130, 
-			"wave": 1400, 
-			"spWave": 600, 
-			"upDownPer": 45 
+			"speed": 150, //スピード
+			"spSpeed": 130, //スピード（max-width: 860px）
+			"wave": 1400, //波の広さ
+			"spWave": 600, //波の広さ（max-width: 860px）
+			"upDownPer": 45 //上下移動量（パーセント）
 		},
 		"point":{
 			"speed": 100,
@@ -23,6 +24,13 @@ $(function(){
 			"spWave": 800,
 			"upDownPer": 40
 		},
+		"footer":{
+			"speed": 100,
+			"spSpeed": 100,
+			"wave": 800,
+			"spWave": 800,
+			"upDownPer": 55
+		}
 	}
 
 	var jsEvtFlag = true;
@@ -31,6 +39,7 @@ $(function(){
 		var elArr = [
 			{ "el":$("#main .intro .visual-list"), "name":"intro"},
 			{ "el":$("#main .point .bg-list"), "name":"point"},
+			{ "el":$("#footer .bg-list"), "name":"footer"}
 		]
 		$.each(elArr, function(index, arr) {
 			if(arr["name"] == "intro"){ var cnt = 2; }
@@ -55,6 +64,11 @@ $(function(){
 			"resize":winResize
 		})
 		winResize();
+		$("#main .intro .icon-scroll").on({
+			"click":function(evt){
+				$("html,body").stop().animate({scrollTop:$("#main .concept").offset().top },500,"swing");
+			}
+		})
 	}init();
 
 	function slideStage(val,elArr){
@@ -145,7 +159,7 @@ $(function(){
 	function winResize(){
 		var winWidth = $(window).width();
 		var maxWidth = 0;
-		var elArr = [$("#main .intro .visual-list"),$("#main .point .bg-list"),$(".bg-list")]
+		var elArr = [$("#main .intro .visual-list"),$("#main .point .bg-list"),$("#footer .bg-list")]
 		$.each(elArr, function(index, el) {
 			maxWidth = 0;
 			el.find(".item").each(function(index, el) {
@@ -184,3 +198,6 @@ $(function(){
 	}
 
 })
+
+//inview
+!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):a(jQuery)}(function(a){function i(){var b,c,d={height:f.innerHeight*0.8,width:f.innerWidth};return d.height||(b=e.compatMode,(b||!a.support.boxModel)&&(c="CSS1Compat"===b?g:e.body,d={height:c.clientHeight,width:c.clientWidth})),d}function j(){return{top:f.pageYOffset||g.scrollTop||e.body.scrollTop,left:f.pageXOffset||g.scrollLeft||e.body.scrollLeft}}function k(){if(b.length){var e=0,f=a.map(b,function(a){var b=a.data.selector,c=a.$element;return b?c.find(b):c});for(c=c||i(),d=d||j();e<b.length;e++)if(a.contains(g,f[e][0])){var h=a(f[e]),k={height:h[0].offsetHeight,width:h[0].offsetWidth},l=h.offset(),m=h.data("inview");if(!d||!c)return;l.top+k.height>d.top&&l.top<d.top+c.height&&l.left+k.width>d.left&&l.left<d.left+c.width?m||h.data("inview",!0).trigger("inview",[!0]):m&&h.data("inview",!1).trigger("inview",[!1])}}}var c,d,h,b=[],e=document,f=window,g=e.documentElement;a.event.special.inview={add:function(c){b.push({data:c,$element:a(this),element:this}),!h&&b.length&&(h=setInterval(k,500))},remove:function(a){for(var c=0;c<b.length;c++){var d=b[c];if(d.element===this&&d.data.guid===a.guid){b.splice(c,1);break}}b.length||(clearInterval(h),h=null)}},a(f).on("scroll resize scrollstop",function(){c=d=null}),!g.addEventListener&&g.attachEvent&&g.attachEvent("onfocusin",function(){d=null})});
